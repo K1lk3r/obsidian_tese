@@ -1,0 +1,5 @@
+.obsidian/*
+!.obsidian/app.json
+!.obsidian/workspace.json
+.DS_Store
+.trash/
