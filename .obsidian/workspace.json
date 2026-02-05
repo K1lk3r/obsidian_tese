@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "e5354d547c52d9b1",
+        "id": "3cf9c8a7ac11ee87",
         "type": "tabs",
         "children": [
           {
-            "id": "0befb9a872b6ec70",
+            "id": "3d56fa39efe0a1f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backprojection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Backprojection"
+            }
+          },
+          {
+            "id": "24e9ea9396973555",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +35,8 @@
               "title": "Backprojection"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,17 +235,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0befb9a872b6ec70",
+  "active": "24e9ea9396973555",
   "lastOpenFiles": [
+    "Começo.md",
+    "Duvidas.md",
+    "Backprojection.md",
+    "Welcome.md",
+    "Diary/Gym -- progresso e relatório.md",
+    "Languages/한국어.md",
+    "conflict-files-obsidian-git.md",
     "Languages/日本語.md",
     "Languages/TomiKorean-430-Basic-Korean-Words.pdf",
-    "Diary/Gym -- progresso e relatório.md",
-    "conflict-files-obsidian-git.md",
-    "Languages/Unconfirmed 956921.crdownload",
     "Ideias para fazer no dia a dia.md",
-    "Languages/한국어.md",
     "Diary",
-    "Welcome.md",
     "Languages",
     "2026-01-30.md",
     "obsidian.zip",
