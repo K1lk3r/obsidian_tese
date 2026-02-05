@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#duvidas",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "2bee39ac9068aea7",
@@ -235,11 +236,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "24e9ea9396973555",
+  "active": "cca57a1f7354da5c",
   "lastOpenFiles": [
+    "Backprojection.md",
     "Começo.md",
     "Duvidas.md",
-    "Backprojection.md",
     "Welcome.md",
     "Diary/Gym -- progresso e relatório.md",
     "Languages/한국어.md",
