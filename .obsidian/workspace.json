@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Backprojection.md",
+                "file": "Duvidas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backprojection"
+              "title": "Duvidas"
             }
           }
         ]
@@ -222,6 +222,7 @@
   },
   "active": "0befb9a872b6ec70",
   "lastOpenFiles": [
+    "Backprojection.md",
     "Duvidas.md",
     "Languages/日本語.md",
     "Languages/TomiKorean-430-Basic-Korean-Words.pdf",
