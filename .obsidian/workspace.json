@@ -62,6 +62,16 @@
               "icon": "lucide-file",
               "title": "Chirp Signals"
             }
+          },
+          {
+            "id": "50ba12908e2d074e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
         "currentTab": 3
@@ -115,22 +125,6 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
-            }
-          }
-        ]
-      },
-      {
-        "id": "2bee39ac9068aea7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "50ba12908e2d074e",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -263,7 +257,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50ba12908e2d074e",
+  "active": "7e966b6f77b20cca",
   "lastOpenFiles": [
     "SAR Principles/Chirp Signals.md",
     "SAR Principles/SAR Principles of Operation.md",
