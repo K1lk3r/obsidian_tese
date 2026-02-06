@@ -62,9 +62,23 @@
               "icon": "lucide-file",
               "title": "SAR Principles of Operation"
             }
+          },
+          {
+            "id": "df8189963de2991a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SAR Principles/Listening Time.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Listening Time"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -256,8 +270,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50ba12908e2d074e",
+  "active": "b687e7deafff3ec3",
   "lastOpenFiles": [
+    "SAR Principles/Listening Time.md",
     "SAR Principles/SAR Principles of Operation.md",
     "SAR Principles/Chirp Signals.md",
     "SAR Principles/scipy-signal-chirp-1_00_00.png",
