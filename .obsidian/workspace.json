@@ -137,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 232.5
   },
   "right": {
     "id": "c33c46ab71e2f0d8",
@@ -263,10 +263,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e966b6f77b20cca",
+  "active": "50ba12908e2d074e",
   "lastOpenFiles": [
-    "SAR Principles/SAR Principles of Operation.md",
     "SAR Principles/Chirp Signals.md",
+    "SAR Principles/SAR Principles of Operation.md",
     "SAR Principles/scipy-signal-chirp-1_00_00.png",
     "SAR Principles/Unconfirmed 922878.crdownload",
     "SAR Principles/chirp signals.md",
