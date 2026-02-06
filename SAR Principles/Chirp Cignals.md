@@ -3,6 +3,8 @@ São Pulsos Eletromagnéticos que tem a seguinte forma
 
 O que sabemos deste sinal:
 - a frequência varia linearmente com o tempo é dada por uma expressão:
+		$f_i=k_r\timest$
+- 
 
 
 - Ver vantagens deste sinal
