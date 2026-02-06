@@ -4,7 +4,7 @@ São Pulsos Eletromagnéticos que tem a seguinte forma
 O que sabemos deste sinal:
 - a frequência varia linearmente com o tempo é dada por uma expressão:
 	$f_i=k_r\times t$  --> em que $f_i$ é a frequência instantânea, $k_r$  é o chrip rate
-		chrip rate é um valor que  
+		chrip rate é um valor que matematicamente há de ser  
 
 
 - Ver vantagens deste sinal
