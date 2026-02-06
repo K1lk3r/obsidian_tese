@@ -7,6 +7,7 @@ O que sabemos deste sinal:
 		chrip rate é um valor que matematicamente há de ser $\frac{1}{s²}$ porque se temos frequência a partir de uma multiplicação com tempo, então temos de ter 1 sobre segundo ao quadrado
 - chirp rate dá-nos a largura de banda $B_r = k_r \times \tau$ 
 	em que $\tau$ é a duração do pulso, lá está largura de banda é em frequência.
+	
 
 	
 - Ver vantagens deste sinal
