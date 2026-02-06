@@ -5,7 +5,8 @@ O que sabemos deste sinal:
 - a frequência varia linearmente com o tempo é dada por uma expressão:
 	$f_i=k_r\times t$  --> em que $f_i$ é a frequência instantânea, $k_r$  é o chrip rate
 		chrip rate é um valor que matematicamente há de ser $\frac{1}{s²}$ porque se temos frequência a partir de uma multiplicação com tempo, então temos de ter 1 sobre segundo ao quadrado
-- chirp rate dá-nos a largura de banda   
+- chirp rate dá-nos a largura de banda $B_r = k_r \times \tau$ 
+	em que $\tau$ é a duração do pulso, lá está largura de banda é em frequência.
 
 	
 - Ver vantagens deste sinal
