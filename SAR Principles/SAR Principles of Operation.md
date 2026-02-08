@@ -11,4 +11,7 @@ Sendo uma plataforma de movimento em 3 dimensões e não tendo um sítio de part
 
 Em relação ao movimento assume-se velocidade constante, e a posição, relativa ao chão e com eixos criados.
 - $(x,y,z) = (x_0,0,\Delta h)$ --> posição inicial do radar 
-- $r(t) = \sqrt{r_{0}^2 + (vt)²} \approx r_0 + \frac{(vt)²}{2r_0}, \frac{vt}{r_0} << 1$ --> aproximação da posição do radar em relação ao chão #duvidas  
+- $r(t) = \sqrt{r_{0}^2 + (vt)²} \approx r_0 + \frac{(vt)²}{2r_0}, \frac{vt}{r_0} << 1$ --> aproximação da posição do radar em relação ao chão #duvidas 
+- $t = t_0 = 0$ --> quando a distância é menor. distância do quê?? tem a ver com posição inicial #duvidas 
+- 
+- 
