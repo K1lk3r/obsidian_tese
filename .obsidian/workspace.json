@@ -69,16 +69,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SAR Principles/Listening Time.md",
+                "file": "SAR Principles/SAR Principles of Operation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Listening Time"
+              "title": "SAR Principles of Operation"
+            }
+          },
+          {
+            "id": "c9fa2e7f3bdd264e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -270,7 +282,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b687e7deafff3ec3",
+  "active": "c9fa2e7f3bdd264e",
   "lastOpenFiles": [
     "SAR Principles/Listening Time.md",
     "SAR Principles/SAR Principles of Operation.md",
