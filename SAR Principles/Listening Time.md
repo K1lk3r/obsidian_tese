@@ -1,0 +1,2 @@
+O listening time essencialmente é o tempo que o sistema fica a ouvir os pulsos. 
+Isto acontece com um determinado tempo $PRI$ --> Pulse repetition Interval , que é dado pelo inverso do $PRF = 1/PRI$ --> Pulse repetition Frequency

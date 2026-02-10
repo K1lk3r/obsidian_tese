@@ -6,5 +6,5 @@ Para isto precisamos processar estes feixes que são nada mais nada menos que si
 
 ### A partir desta última frase temos o tema central da minha tese
 
-Que vamos usar uma FPGA toda tunadona que tem uma tecnologia nova chamada AI engines.  A partir daqui queremos usar as potencialidades totais da FPGA para acelerar, em Hardware o algoritmo de processamento, que neste caso vai ser o [[Backprojection]]
+Que vamos usar uma FPGA toda tunadona que tem uma tecnologia nova chamada AI engines.  A partir daqui queremos usar as potencialidades totais da FPGA para acelerar, em Hardware o algoritmo de processamento, que neste caso vai ser o [[Backprojection Overview]]
 
