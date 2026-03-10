@@ -23,3 +23,11 @@ Começamos com $N_p$ pulsos -- **onde é que está representado no código** --
 - z0 -> É zero serve para calcular o Z_diff que depois serve para calcular o R 
 #### Parâmetros calculados
 - R -> range da plataforma do pixel que estamos a tratar
+
+## O que o Algoritmo faz
+- Dois loops encadeados em $y$ e $x$ , ou seja percorremos os pixeis da imagem que queremos produzir
+- Declaramos a variável *accum*  e calculamos $px = (- BP\_NPIX\_X / 2.0 + 5.0 + ix) * dxdy$ 
+	- Em que BP_NPIX_X é o número de pixeis da largura da imagem a ser formada
+	- ix é o iterador em X que vai até 1024 definido pelo programa
+	- dxdy Image pixel spacing
+	
