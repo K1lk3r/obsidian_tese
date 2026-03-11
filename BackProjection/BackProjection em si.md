@@ -30,4 +30,6 @@ Começamos com $N_p$ pulsos -- **onde é que está representado no código** --
 	- Em que BP_NPIX_X é o número de pixeis da largura da imagem a ser formada
 	- ix é o iterador em X que vai até 1024 definido pelo programa
 	- dxdy Image pixel spacing
-	
+	- accum é do tipo complexo (incializado a zero as duas componentes)
+-  Em cada pixel da imagem percorremos o número total de pulsos para calcular o valor do pixel
+	- o valor do pixel está em complexo 
