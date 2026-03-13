@@ -28,8 +28,30 @@ Começamos com $N_p$ pulsos -- **onde é que está representado no código** --
 - Dois loops encadeados em $y$ e $x$ , ou seja percorremos os pixeis da imagem que queremos produzir
 - Declaramos a variável *accum*  e calculamos $px = (- BP\_NPIX\_X / 2.0 + 5.0 + ix) * dxdy$ 
 	- Em que BP_NPIX_X é o número de pixeis da largura da imagem a ser formada
-	- ix é o iterador em X que vai até 1024 definido pelo programa
+	- ix é o iterador em X que vai até 1024 definido pelo programa e que temos de obter esta informação a partir dos dados dos pulsos (i guess)
 	- dxdy Image pixel spacing
 	- accum é do tipo complexo (incializado a zero as duas componentes)
--  Em cada pixel da imagem percorremos o número total de pulsos para calcular o valor do pixel
+1. Loop dos pixeis 
 	- o valor do pixel está em complexo 
+	- Em cada pixel da imagem percorremos o número total de pulsos para calcular o valor do pixel
+	- Neste caso (medium size) a imagem é de 1024 x 1024
+	- E calculamos py e px, para cada iteração, respetivamente
+~~~ C
+for (iy = 0; iy < BP_NPIX_Y; ++iy)
+	py = (-BP_NPIX_Y/2.0 + 5.0 + iy) * dxdy
+	for (ix = 0; ix < BP_NPIX_X; ++ix) 
+		px = (-BP_NPIX_X/2.0 + 5.0 + ix) * dxdy
+~~~
+2. Loop dos pulsos
+	- Em cada pixel percorremos os pulsos capturados
+	- Inicializamos accum a zeros
+~~~C
+accum = 0; // accum é um valor complexo
+for (p = 0; p < N_PULSES; ++p)
+~~~ 
+3. Calculo do R
+	- Começamos por calcular xdiff, ydiff, zdiff 
+	- E depois o R
+~~~C
+
+~~~
