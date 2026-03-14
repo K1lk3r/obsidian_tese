@@ -3,7 +3,7 @@ Por passos o que o algoritmo faz?
 
 ## Step by step -- Paper/Math view
 
-Começamos com $N_p$ pulsos -- **onde é que está representado no código** -- 
+Começamos com $N_p$ pulsos -- **onde é que está representado no código** -- N_PULSES
 
 
 ## Step by Step -- Código C/Matlab
