@@ -76,6 +76,8 @@ for (p = 0; p < N_PULSES; ++p)
 	- Calculamos a sample interpolada de cada pulso (base do expoente complexo)
 	- o match filter (o expoente do valor complexo)
 	- que depois é somado no accum
+	- $ku = 2.0 * M\_PI * fc / SPEED\_OF\_LIGHT$
+	- $M\_PI = \pi$
 ~~~ C
 		complex sample, matched_filter, prod;
 		/* interpolation range is [bin_floor, bin_floor+1] */
