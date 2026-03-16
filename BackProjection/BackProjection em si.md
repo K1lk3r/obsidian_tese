@@ -1,5 +1,6 @@
 
 Por passos o que o algoritmo faz?
+Na verdade o que o Algoritmo faz é passar os dados de fase (que é o que o paper ensina a calcular na secção 4.1) para uma imagem
 
 ## Step by step -- Paper/Math view
 
@@ -25,8 +26,6 @@ N_RANGE_UPSAMPLED --> m no Paper porque as samples são $m\times n$ em que $m$ s
 #### Parâmetros calculados
 - R -> range da plataforma do pixel que estamos a tratar
 - Bin --> não sei bem o que é
-
-
 ## O que o Algoritmo faz
 - Dois loops encadeados em $y$ e $x$ , ou seja percorremos os pixeis da imagem que queremos produzir
 - Declaramos a variável *accum*  e calculamos $px = (- BP\_NPIX\_X / 2.0 + 5.0 + ix) * dxdy$ 
