@@ -4,6 +4,7 @@ Por passos o que o algoritmo faz?
 ## Step by step -- Paper/Math view
 
 Começamos com $N_p$ pulsos -- **onde é que está representado no código** -- N_PULSES
+N_RANGE_UPSAMPLED --> m no Paper porque as samples são $m\times n$ em que $m$ são os bins e $n$ o número de pulsos. (está representado por $\tau_n$ e $n$ é o número de pulsos) 
 
 
 ## Step by Step -- Código C/Matlab
