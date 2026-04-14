@@ -6,6 +6,7 @@ sar is a type of Radar technology used for two dimensional high resolution image
 
 
 #### BackProjection SAR
+How does the algorithm work? 
 #### BackProjection in FPGA
 #### Conclusions
 
