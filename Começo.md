@@ -8,3 +8,5 @@ Para isto precisamos processar estes feixes que são nada mais nada menos que si
 
 Que vamos usar uma FPGA toda tunadona que tem uma tecnologia nova chamada AI engines.  A partir daqui queremos usar as potencialidades totais da FPGA para acelerar, em Hardware o algoritmo de processamento, que neste caso vai ser o [[Backprojection Overview]]
 
+
+
