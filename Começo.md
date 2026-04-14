@@ -8,3 +8,14 @@ Para isto precisamos processar estes feixes que são nada mais nada menos que si
 
 Que vamos usar uma FPGA toda tunadona que tem uma tecnologia nova chamada AI engines.  A partir daqui queremos usar as potencialidades totais da FPGA para acelerar, em Hardware o algoritmo de processamento, que neste caso vai ser o [[Backprojection Overview]]
 
+
+# O que eu devo pesquisar do [[ARC20.pdf]]
+
+- Differential Range from platform to each pixel at the center of the swath
+- pixel location in cartesian coordinates
+- range to center of the swath from radar platform
+- aperture point 
+- range from pixel to aperture point
+- wave sample in the previous adjacent range bin
+- corresponding range to the previous adjacent bin
+- 
