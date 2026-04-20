@@ -8,6 +8,7 @@
 - wave sample in the previous adjacent range bin
 - corresponding range to the previous adjacent bin
 - **Como é que o SAR sabe o tamanho que um pixel tem?** !!!!!!
+	É o processador que decide no final, no entanto a resolução (da imagem suponho) tem a ver com a largura de banda do sinal 
 - 
 
 Falar do porquê desta implementação ser superior em FPGA ou com o uso dos AI engines e não um DSP normal.
