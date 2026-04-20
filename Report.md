@@ -7,7 +7,7 @@ sar is a type of Radar technology used for two dimensional high resolution image
 ##### Helena [[ARC20.pdf]]
 Explica simplesmente o algoritmo como está no paper [[pritsker2015.pdf]] 
 ##### [[pritsker2015.pdf]]
-O que está no background --> 
+O que está no background --> em relação a SAR em si, tem só que a aeronave envia ondas/sinais eletromagnéticos e recebe-os de volta, refere também que o cross range é mau e portanto com vários sinais dá para fazer a abertura sintética. E depois explica que se um swath 
 #### BackProjection SAR
 How does the algorithm work? No que é que ele pega para funcionar nos aspetos físicos da coisa.
 
