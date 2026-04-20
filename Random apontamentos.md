@@ -7,8 +7,11 @@
 - range from pixel to aperture point
 - wave sample in the previous adjacent range bin
 - corresponding range to the previous adjacent bin
+- **Como é que o SAR sabe o tamanho que um pixel tem?** !!!!!!
+- 
 
 Falar do porquê desta implementação ser superior em FPGA ou com o uso dos AI engines e não um DSP normal.
 # Steps 
 1. Quero exprimentar ler os binarios de matlab dentro do C
 2. e depois tentar fazer um backprojection que gera as imagens/binarios com os matlabs 
+3. 
