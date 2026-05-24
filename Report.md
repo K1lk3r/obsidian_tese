@@ -18,7 +18,14 @@ O que está no background --> em relação a SAR em si, tem só que a aeronave e
 How does the algorithm work? No que é que ele pega para funcionar nos aspetos físicos da coisa.
 
 #### BackProjection in FPGA
+*Referir de um  modo geral como são feitas as implementações na FPGA seja por HLS, ou uma implementação em vivado* 
+
+There have been multiple implementations of the BackProjection Algorithm in FPGA devices, namely the AMD one (referir o paper da AMD), and they have left a lot of room for improvement, more on that later.
+Since the goal of this work is to implement the new AI Engines that are powerful devices for accelerating basic operations (fazer mais pesquisa aqui e comentar bastante os AI engines). They also have a mode for DSP, meaning we can use them for Digital Signal Processing. With this we can conclude that the main goal is to use this AI Engines to Accelerate the maximum we can, and compare with an HLS implementation or even with the DSP Engines 
 #### Conclusions
 
 ## Preliminary work
+Primeiro comecei por compreender o algoritmo, como funciona, o que são os seus inputs, outputs e depois como é originada a imagem. Para isto fui pesquisar várias implementações do algoritmo, de entre várias a mais citada é sempre a do Gorham... e portanto decidi basear a minha própria implementação do algoritmo nesta, em C uma vez que esta está feita em MatLab. Para isto usei o Gotcha como inputs de dados de SAR para processar, estando em ficheiros de binários MatLab, pensei em duas hipóteses ou ler os dados, de MatLab dentro da minha própria implementação ou converter os dados para ficheiros de binário normais.  
 ## Work Proposal
+
+
