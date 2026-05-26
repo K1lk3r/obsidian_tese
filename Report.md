@@ -5,9 +5,6 @@ sar is a type of Radar technology used for two dimensional high resolution image
 
 ****Inserir Imagem e explicar a imagem de voo do SAR****
 
-After receiving the echoes of the signals sent by the antenna, we need to process them so the final image can be built. There are many ways of doing this, it can be processed in real time, with a DSP, ASIC or even a MicroController, it can be transmitted and processed, or saved and be processed afterwards. With the goal of this work we are going to use an ALVEO V80 and its properties.
-
-There are multiple algorithms that can convert raw SAR data into images, the picked one is the BackProjection algorithm since it is very simple and can be parallelised very easily. 
 
 #### Ver o que está noutros documentos do sobre SAR e fazer o mesmo
 ##### Helena [[ARC20.pdf]]
