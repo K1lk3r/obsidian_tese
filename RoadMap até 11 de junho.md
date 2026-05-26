@@ -1,0 +1,8 @@
+- [ ] Fazer o state of the 🛫 2026-05-31 📅 
+	- [ ] Falar de SAR
+	- [ ] Falar dos AI engines
+	- [ ] Falar de implementações em FPGA
+	- [ ] Falar da inovação dos AI engines
+- [ ] Fazer o planeamento do que fiz e vou fazer📅 2026-06-11
+- [ ] Acabar a minha implementação em C do Backprojection
+- [ ] Implementar na placa um código teste bem básico
