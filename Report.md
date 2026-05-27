@@ -19,6 +19,9 @@ How does the algorithm work? No que é que ele pega para funcionar nos aspetos f
 
 There have been multiple implementations of the BackProjection Algorithm in FPGA devices, namely the AMD one (referir o paper da AMD), and they have left a lot of room for improvement, more on that later.
 Since the goal of this work is to implement the new AI Engines that are powerful devices for accelerating basic operations (fazer mais pesquisa aqui e comentar bastante os AI engines). They also have a mode for DSP, meaning we can use them for Digital Signal Processing. With this we can conclude that the main goal is to use this AI Engines to Accelerate the maximum we can, and compare with an HLS implementation or even with the DSP Engines 
+
+
+Copiar um bocado/ Ir buscar cenas que estão no paper/PIC2 da Helena.
 #### Conclusions
 
 ## Preliminary work
