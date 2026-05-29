@@ -18,3 +18,7 @@ As memorias dos tiles estão conetadas em rede adjacentemente, no entanto també
 
 ## NoC (Network on Chip)
 Isto é o que permite estes sistemas todos comunicarem entre si, e com o IO. (I think)
+
+
+## Use cases
+The capabilities of the V80 mean it is ideal for memory-bound compute applications. These applications include genomics, astrophysics, and, of course, networking, such as packet monitoring, cybersecurity, and offloading computational storage, enabling CPU offload.
