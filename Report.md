@@ -14,6 +14,10 @@ O que está no background --> em relação a SAR em si, tem só que a aeronave e
 #### BackProjection SAR
 How does the algorithm work? No que é que ele pega para funcionar nos aspetos físicos da coisa.
 
+First we need to understand the inputs of the algorithm ...(explicar como é que se obtem a phase history o vector).
+Then we take this whole information and we apply an *(Inverse)* Fourier Transform, in this case since we are using digital signals we apply the fft (Fast Fourier Transform) to change the data into **something**
+Proceed to explain the algorithm as it is in Gorham, posso usar o código de matlab para ajudar no pseudo código (Assim o relatório aumenta de tamanho)
+
 #### BackProjection in FPGA
 *Referir de um  modo geral como são feitas as implementações na FPGA seja por HLS, ou uma implementação em vivado* 
 
