@@ -15,12 +15,18 @@ O que está no background --> em relação a SAR em si, tem só que a aeronave e
 How does the algorithm work? No que é que ele pega para funcionar nos aspetos físicos da coisa.
 
 First we need to understand the inputs of the algorithm ...(explicar como é que se obtem a phase history o vector).
-The phase 
+The phase history is a big vector of data that is our main point of information so we can start making use of our algorithm and form the image. It's given by this expression (equação 5 do Gorham).
+
+Where $A(f_k,\tau_n)$ is the amplitude of the signal related to the radar cross section of the target meaning. This means that depending where our target is, closer or further, our amplitude is bigger or smaller respectively.
+The phase (colocar a expressão da fase) depends on the frequency of each sample and the differential range given by (colocar a expressao do range diferencial). Explicar o range diferencial
+The differential range is the distance between the center and the targe
 
 
 Then we take this whole information and we apply an *(Inverse)* Fourier Transform, in this case since we are using digital signals we apply the fft (Fast Fourier Transform) to change the data into **something**
 Proceed to explain the algorithm as it is in Gorham, posso usar o código de matlab para ajudar no pseudo código (Assim o relatório aumenta de tamanho)
 
+
+Input: Range-compressed SAR data S(pulse_index, range_sample) Input: Radar trajectory positions R_p for each pulse Input: Output image grid P(x, y) with coordinates Output: Focused SAR Image I(x, y) Initialize I(x, y) = 0 for all pixels For each pixel (x, y) in grid P: For each pulse index n: 1. Get Radar Position: pos = R_p[n] 2. Calculate Slant Range: r_n = distance(pos, (x, y)) 3. Determine Range Sample Index: idx = r_n * (2 * bandwidth / speed_of_light) (Map physical range to discrete signal index) 4. Interpolate Signal Value: s_val = interpolate(S[n], idx) 5. Calculate Phase Compensation: phase = exp(-j * 4 * pi * frequency / c * r_n) 6. Accumulate Energy: I(x, y) = I(x, y) + (s_val * phase) Return I(x, y)
 #### BackProjection in FPGA
 *Referir de um  modo geral como são feitas as implementações na FPGA seja por HLS, ou uma implementação em vivado* 
 
