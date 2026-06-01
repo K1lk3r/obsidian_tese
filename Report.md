@@ -23,6 +23,9 @@ The differential range is the distance between the target and the origin of the 
 pulses. Why did I say in the beginning vector? Since we are trying for Real Time Processing the whole data is not immediately available, which means we only need to have a vector to store the data. Besides flattening a matrix to a vector is more optimal to access data. *Não gosto desta frase* 
 
 
+A ifft aparece da simplificação das expressões porque sabemos que o  $f_k$ é o $f_1$ com um $\Delta f$ porque estamos no domínio digital. Desta simplificação aparece então a Transformada Inversa de Fourier da phase history     
+![[Pasted image 20260601154956.png]]
+
 ![[Pasted image 20260601150232.png]]
 
 Then we take this whole information and we apply an *(Inverse)* Fourier Transform, in this case since we are using digital signals we apply the fft (Fast Fourier Transform) to change the data into **something**
