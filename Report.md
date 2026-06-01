@@ -12,14 +12,14 @@ Explica simplesmente o algoritmo como está no paper [[pritsker2015.pdf]]
 ##### [[pritsker2015.pdf]]
 O que está no background --> em relação a SAR em si, tem só que a aeronave envia ondas/sinais eletromagnéticos e recebe-os de volta, refere também que o cross range é mau e portanto com vários sinais dá para fazer a abertura sintética. E depois explica que se um swath 
 #### BackProjection SAR
-How does the algorithm work? No que é que ele pega para funcionar nos aspetos físicos da coisa.
+How does the algorithm work? No que é que ele pega para funcionar nos aspectos físicos da coisa.
 
-First we need to understand the inputs of the algorithm ...(explicar como é que se obtem a phase history o vector).
+First we need to understand the inputs of the algorithm ...(explicar como é que se obtém a phase history o vector).
 The phase history is a big vector of data that is our main point of information so we can start making use of our algorithm and form the image. It's given by this expression (equação 5 do Gorham).
 
-Where $A(f_k,\tau_n)$ is the amplitude of the signal related to the radar cross section of the target meaning. This means that depending where our target is, closer or further, our amplitude is bigger or smaller respectively.
-The phase (colocar a expressão da fase) depends on the frequency of each sample and the differential range given by (colocar a expressao do range diferencial). Explicar o range diferencial
-The differential range is the distance between the center and the targe
+Where $A(f_k,\tau_n)$ is the amplitude of the signal related to the radar cross section (RCS é o quanto um objecto é detectado pelo radar quanto maior o valor mais detectável o objecto é) of the target meaning. This means that depending where our target is, closer or further, our amplitude is bigger or smaller respectively.
+The phase (colocar a expressão da fase) depends on the frequency of each sample and the differential range given by (colocar a expressão do range diferencial). Explicar o range diferencial
+The differential range is the distance between the target and the origin of the scene, meaning the "first location of the image/flight".
 
 
 Then we take this whole information and we apply an *(Inverse)* Fourier Transform, in this case since we are using digital signals we apply the fft (Fast Fourier Transform) to change the data into **something**
