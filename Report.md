@@ -18,8 +18,9 @@ First we need to understand the inputs of the algorithm ...(explicar como é que
 The phase history is a big vector of data that is our main point of information so we can start making use of our algorithm and form the image. It's given by this expression (equação 5 do Gorham).
 
 Where $A(f_k,\tau_n)$ is the amplitude of the signal related to the radar cross section (RCS é o quanto um objecto é detectado pelo radar quanto maior o valor mais detectável o objecto é) of the target meaning. This means that depending where our target is, closer or further, our amplitude is bigger or smaller respectively.
-The phase (colocar a expressão da fase) depends on the frequency of each sample and the differential range given by (colocar a expressão do range diferencial). Explicar o range diferencial
-The differential range is the distance between the target and the origin of the scene, meaning the "first location of the image/flight".
+The phase (colocar a expressão da fase) depends on the frequency of each sample and the differential range given by (colocar a expressão do range diferencial). **Explicar o range diferencial**
+The differential range is the distance between the target and the origin of the scene, meaning the "first location of the image/flight". So this means that for each signal, chirp signal, we have a vector of phase history. This vector has a size of K, where K is the number of frequencies that the chirp signal has. This adjacent to the number of pulses, the phase history is a massive matrix of size K frequencies per $N_p$
+pulses. Why did I say in the beginning vector? Since we are trying for Real Time Processing the whole data is not immediately available, which means we only need to have a vector to store the data. Besides flattening a matrix to a vector is more optimal to access data. *Não gosto desta frase* 
 
 
 Then we take this whole information and we apply an *(Inverse)* Fourier Transform, in this case since we are using digital signals we apply the fft (Fast Fourier Transform) to change the data into **something**
