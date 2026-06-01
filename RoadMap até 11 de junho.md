@@ -6,3 +6,4 @@
 - [ ] Fazer o planeamento do que fiz e vou fazer📅 2026-06-11
 - [ ] Acabar a minha implementação em C do Backprojection
 - [ ] Implementar na placa um código teste bem básico
+- [ ] ⏫ Ver cenas como SNR e este tipo de medidas que avaliam a imagem
