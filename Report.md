@@ -33,6 +33,9 @@ Proceed to explain the algorithm as it is in Gorham, posso usar o código de mat
 
 
 Input: Range-compressed SAR data S(pulse_index, range_sample) Input: Radar trajectory positions R_p for each pulse Input: Output image grid P(x, y) with coordinates Output: Focused SAR Image I(x, y) Initialize I(x, y) = 0 for all pixels For each pixel (x, y) in grid P: For each pulse index n: 1. Get Radar Position: pos = R_p[n] 2. Calculate Slant Range: r_n = distance(pos, (x, y)) 3. Determine Range Sample Index: idx = r_n * (2 * bandwidth / speed_of_light) (Map physical range to discrete signal index) 4. Interpolate Signal Value: s_val = interpolate(S[n], idx) 5. Calculate Phase Compensation: phase = exp(-j * 4 * pi * frequency / c * r_n) 6. Accumulate Energy: I(x, y) = I(x, y) + (s_val * phase) Return I(x, y)
+
+
+There have been other BP implementations explored, but this ones don't take into account the fact the use of chirp signals, meaning they skip the IFFT and FFTSHIFT part, this implementations simply take the first equation of backprojection and run them for every pulse, for each pixel, therefore getting O(n³). Since my approach is going to be with the fftshift and IFFT we get a more complex algorithm.
 #### BackProjection in FPGA
 *Referir de um  modo geral como são feitas as implementações na FPGA seja por HLS, ou uma implementação em vivado* 
 
