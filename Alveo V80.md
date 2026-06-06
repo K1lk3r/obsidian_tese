@@ -25,6 +25,8 @@ O Processing System (PS) corresponde à componente de processamento convencional
 
 O PS é normalmente responsável pela configuração do sistema, gestão da comunicação entre os diferentes blocos do dispositivo e coordenação das tarefas executadas pelos restantes recursos computacionais. Desta forma, o processamento de controlo permanece separado das operações intensivas em computação implementadas na lógica programável e nos AI Engines.
 
+The Processing System corresponds to the componet of conventional processing of the Versal Adaptive SoC. This region integrates ARM Cortex-A72 64 bit processor, destined to operating systems and control application execution. It also has ARM Cortex-R5  processor for Real-Time Processing tasks.
+
 ## PL (programming logic)
 Falar só um pouco dos valores de BRAM LUT's DSP's, se bem que não sei bem o que tem de DSP porque existem DSP's engines na placa também.
 
