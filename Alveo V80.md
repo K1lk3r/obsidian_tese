@@ -4,7 +4,49 @@ The processing system (PS), platform management controller (PMC), and CCIX PCIe 
 
 
 Aqui sei que existem 3 modulos principais APU  o processador normal RPU o real time processador e PMC acho que é a programming manager and controller 
+
+
+\subsubsection{Control, Interface and Processing System (CIPS)}
+
+O Control, Interface and Processing System (CIPS) constitui o subsistema responsável pelo controlo e gestão do dispositivo Versal Adaptive SoC. Este bloco integra processadores de propósito geral, controladores de periféricos, interfaces de comunicação externas e mecanismos de configuração do sistema, funcionando como ponto central de coordenação dos restantes recursos computacionais.
+
+O CIPS inclui um conjunto de processadores Arm Cortex-A72 de 64 bits destinados à execução de sistemas operativos e aplicações de elevado nível, bem como processadores Arm Cortex-R5F concebidos para tarefas determinísticas e de tempo real. Esta combinação permite separar funções de controlo, gestão de recursos e execução de aplicações das tarefas computacionalmente intensivas executadas na lógica programável e nos AI Engines.
+
+Além das unidades de processamento, o CIPS disponibiliza um conjunto abrangente de interfaces de comunicação que permitem a integração do dispositivo com sistemas externos e com os restantes blocos internos da arquitetura. Estas interfaces incluem controladores PCI Express, Ethernet, UART, SPI, I2C, GPIO e mecanismos de acesso à memória externa.
+
+O CIPS é também responsável pelo processo de arranque (\textit{boot}), configuração do dispositivo e gestão dos recursos de segurança. Durante a inicialização do sistema, este subsistema coordena a configuração da lógica programável, dos AI Engines e dos restantes componentes da plataforma.
+\paragraph{Application Processing Unit}
+
+A Application Processing Unit (APU) é composta por dois processadores Arm Cortex-A72 de 64 bits que executam sistemas operativos como Linux ou aplicações bare-metal. Estes processadores são normalmente responsáveis pela gestão de tarefas de elevado nível, controlo da aplicação e coordenação da execução dos aceleradores implementados no dispositivo.
+
+Os Cortex-A72 possuem memória cache multinível e suporte para execução de software complexo, permitindo que o Versal funcione como um sistema computacional autónomo sem necessidade de um processador externo.
+
+\paragraph{Real-Time Processing Unit}
+
+A Real-Time Processing Unit (RPU) integra dois processadores Arm Cortex-R5F concebidos para aplicações críticas em termos temporais. Estes núcleos podem operar de forma independente ou em modo lockstep para aumentar a tolerância a falhas.
+
+As aplicações típicas incluem controlo industrial, monitorização do sistema, gestão de comunicações e execução de tarefas com requisitos rigorosos de latência.
+
+\paragraph{Interfaces de Comunicação}
+
+O CIPS disponibiliza diversas interfaces de comunicação que permitem a integração da plataforma em sistemas heterogéneos.
+
+A interface PCI Express constitui uma das principais formas de comunicação entre a placa Alveo V80 e o sistema hospedeiro. Esta interface permite transferências de dados de elevada largura de banda entre a memória do servidor e os aceleradores implementados no dispositivo.
+
+Para aplicações de rede, o dispositivo suporta interfaces Ethernet de elevada velocidade, possibilitando a receção e transmissão direta de fluxos de dados sem necessidade de processamento intermédio pelo processador principal.
+
+Adicionalmente, encontram-se disponíveis interfaces UART, SPI e I\textsuperscript{2}C destinadas à configuração, depuração e comunicação com periféricos externos. Estas interfaces são frequentemente utilizadas durante as fases de desenvolvimento e integração do sistema.
+
+\paragraph{Integração com a Network-on-Chip}
+
+O acesso aos recursos computacionais e de memória do dispositivo é realizado através da Network-on-Chip (NoC). O CIPS comunica com a lógica programável, os AI Engines e os controladores de memória através desta infraestrutura de interligação de elevada largura de banda.
+
+A utilização da NoC elimina muitos dos estrangulamentos associados às arquiteturas FPGA tradicionais, permitindo que os processadores acedam eficientemente aos dados armazenados na memória HBM e coordenem a execução dos aceleradores distribuídos pelo dispositivo.
+
+No contexto desta dissertação, o CIPS desempenha principalmente funções de orquestração e controlo da aplicação. Os processadores Arm são responsáveis pela configuração dos aceleradores, gestão das transferências de dados e coordenação da execução, enquanto as operações computacionalmente mais exigentes são executadas na lógica programável e nos AI Engines. Esta separação permite explorar eficientemente a heterogeneidade da arquitetura Versal, reservando os recursos especializados para as etapas críticas do algoritmo de Backprojection.
 ###### APU
+
+
 ###### RPU
 ###### PMC
 
