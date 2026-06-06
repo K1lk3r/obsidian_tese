@@ -8,8 +8,28 @@ Aqui sei que existem 3 modulos principais APU  o processador normal RPU o real t
 ###### RPU
 ###### PMC
 
+\subsection{AMD Alveo V80 Accelerator Card}
+
+A AMD Alveo V80 é uma placa aceleradora para centros de dados baseada no dispositivo AMD Versal HBM XCV80 Adaptive SoC. Foi desenvolvida para aplicações intensivas em memória e computação, incluindo High Performance Computing (HPC), processamento de sinais, análise de dados, redes de comunicação e aplicações de inteligência artificial.
+
+A placa integra diferentes tipos de recursos computacionais num único dispositivo heterogéneo, combinando processadores Arm, lógica reconfigurável FPGA, uma rede interna de comunicação (Network-on-Chip), motores especializados de computação vetorial denominados AI Engines e memória de elevada largura de banda (HBM2e). Esta arquitetura permite adaptar o hardware à aplicação e explorar elevados níveis de paralelismo. A Alveo V80 disponibiliza aproximadamente 32 GB de memória HBM2e com uma largura de banda superior a 800 GB/s, constituindo uma plataforma adequada para aplicações limitadas pelo acesso à memória.
+
+The AMD Alveo V80 is an accelerator for data center based on the AMD device Versal HBM XCV80 Adaptive Soc. It was developed for intensive, memory apps and computations including High Performance Computing (HPC), Signal Processing, Data Analysis, Network Communication and AI applications.
+
+The board integrates several types of computational resources in a single heterogeneous device, combinig ARM processors, Reconfigurable Logic (FPGA), an internal communication Network (Network-on-Chip (NoC)), Engines specialized in vectorial computation named AI Engines and High Memory Bandwidth (HBM2e). This architecture allows the hardware to adapt to the application and explore high level of parallelism. The Alveo V80 offers more or less 32 GB of memory HBM2e with a bandwidth that can surpass of 800 GB/s , allowing for memory bound applications.
+
+
+\subsubsection{Processing System}
+
+O Processing System (PS) corresponde à componente de processamento convencional do Versal Adaptive SoC. Esta região integra processadores Arm Cortex-A72 de 64 bits destinados à execução de sistemas operativos e aplicações de controlo, bem como processadores Arm Cortex-R5 para tarefas de tempo real.
+
+O PS é normalmente responsável pela configuração do sistema, gestão da comunicação entre os diferentes blocos do dispositivo e coordenação das tarefas executadas pelos restantes recursos computacionais. Desta forma, o processamento de controlo permanece separado das operações intensivas em computação implementadas na lógica programável e nos AI Engines.
+
 ## PL (programming logic)
 Falar só um pouco dos valores de BRAM LUT's DSP's, se bem que não sei bem o que tem de DSP porque existem DSP's engines na placa também.
+
+
+
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
 
