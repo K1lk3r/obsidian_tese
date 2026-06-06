@@ -10,6 +10,8 @@ Aqui sei que existem 3 modulos principais APU  o processador normal RPU o real t
 
 O Control, Interface and Processing System (CIPS) constitui o subsistema responsável pelo controlo e gestão do dispositivo Versal Adaptive SoC. Este bloco integra processadores de propósito geral, controladores de periféricos, interfaces de comunicação externas e mecanismos de configuração do sistema, funcionando como ponto central de coordenação dos restantes recursos computacionais.
 
+The CIPS, Control, Interface and Processing Systems, 
+
 O CIPS inclui um conjunto de processadores Arm Cortex-A72 de 64 bits destinados à execução de sistemas operativos e aplicações de elevado nível, bem como processadores Arm Cortex-R5F concebidos para tarefas determinísticas e de tempo real. Esta combinação permite separar funções de controlo, gestão de recursos e execução de aplicações das tarefas computacionalmente intensivas executadas na lógica programável e nos AI Engines.
 
 Além das unidades de processamento, o CIPS disponibiliza um conjunto abrangente de interfaces de comunicação que permitem a integração do dispositivo com sistemas externos e com os restantes blocos internos da arquitetura. Estas interfaces incluem controladores PCI Express, Ethernet, UART, SPI, I2C, GPIO e mecanismos de acesso à memória externa.
