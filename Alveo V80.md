@@ -30,6 +30,10 @@ O CIPS é também responsável pelo processo de arranque (\textit{boot}), config
 
 A Application Processing Unit (APU) é composta por dois processadores Arm Cortex-A72 de 64 bits que executam sistemas operativos como Linux ou aplicações bare-metal. Estes processadores são normalmente responsáveis pela gestão de tarefas de elevado nível, controlo da aplicação e coordenação da execução dos aceleradores implementados no dispositivo.
 
+The APU -- Aplications Processing Unit is composed of two ARM Cortex-A72 64 bits processors that execute Operating Systems like Linux or Bare Metal Applications. This Processors are normally responsible for high level task management, application control and the coordination of the execution of accelerators implemented in the device. 
+
+The Cortex-A72 posses multi-level cache memory and complex software execution support allowing the Versal to work as an autonumous computational system without the need of an external processor.  
+
 Os Cortex-A72 possuem memória cache multinível e suporte para execução de software complexo, permitindo que o Versal funcione como um sistema computacional autónomo sem necessidade de um processador externo.
 
 \paragraph{Real-Time Processing Unit}
