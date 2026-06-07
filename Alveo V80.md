@@ -6,18 +6,27 @@ The processing system (PS), platform management controller (PMC), and CCIX PCIe 
 Aqui sei que existem 3 modulos principais APU  o processador normal RPU o real time processador e PMC acho que é a programming manager and controller 
 
 
-\subsubsection{Control, Interface and Processing System (CIPS)}
+## Control, Interface and Processing System (CIPS)
 
 O Control, Interface and Processing System (CIPS) constitui o subsistema responsável pelo controlo e gestão do dispositivo Versal Adaptive SoC. Este bloco integra processadores de propósito geral, controladores de periféricos, interfaces de comunicação externas e mecanismos de configuração do sistema, funcionando como ponto central de coordenação dos restantes recursos computacionais.
 
-The CIPS, Control, Interface and Processing Systems, 
+**The CIPS, Control, Interface and Processing Systems, forms the subsystem responsible for the control and management of the Versal Adaptive SoC. This block integrates General Purpose processors, Peripheral Controls, External Communication Interface, System Configuration Mechanisms, working as a central coordination point for the remainder of computational resources.
 
 O CIPS inclui um conjunto de processadores Arm Cortex-A72 de 64 bits destinados à execução de sistemas operativos e aplicações de elevado nível, bem como processadores Arm Cortex-R5F concebidos para tarefas determinísticas e de tempo real. Esta combinação permite separar funções de controlo, gestão de recursos e execução de aplicações das tarefas computacionalmente intensivas executadas na lógica programável e nos AI Engines.
 
+**CIPS includes a set of ARM Cortex-A72 processors of 64 bits, destined to the execution of Operating Systems, and High Level applications. It also includes an ARM Cortex-R5F, designed for deterministic and Real-Time tasks. This combination allows for the separation of control functions, Resource Management and Application execution of computational heavy tasks executed in Programming Logic and AI Engines.**
+
 Além das unidades de processamento, o CIPS disponibiliza um conjunto abrangente de interfaces de comunicação que permitem a integração do dispositivo com sistemas externos e com os restantes blocos internos da arquitetura. Estas interfaces incluem controladores PCI Express, Ethernet, UART, SPI, I2C, GPIO e mecanismos de acesso à memória externa.
 
+**Besides the Processing Units CIPS offers a set of broad communication interfaces that allows the integration of the device (Alveo V80) with External Systems and the remaining internal blocks of the architecture. This interfaces include PCI Express Controlers, Ethernet, UART, SPI, I2C, GPIO and External memory access mechanisms.**
+
 O CIPS é também responsável pelo processo de arranque (\textit{boot}), configuração do dispositivo e gestão dos recursos de segurança. Durante a inicialização do sistema, este subsistema coordena a configuração da lógica programável, dos AI Engines e dos restantes componentes da plataforma.
+
+
+
 \paragraph{Application Processing Unit}
+
+
 
 A Application Processing Unit (APU) é composta por dois processadores Arm Cortex-A72 de 64 bits que executam sistemas operativos como Linux ou aplicações bare-metal. Estes processadores são normalmente responsáveis pela gestão de tarefas de elevado nível, controlo da aplicação e coordenação da execução dos aceleradores implementados no dispositivo.
 
