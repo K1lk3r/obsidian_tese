@@ -22,7 +22,7 @@ Além das unidades de processamento, o CIPS disponibiliza um conjunto abrangente
 
 O CIPS é também responsável pelo processo de arranque (\textit{boot}), configuração do dispositivo e gestão dos recursos de segurança. Durante a inicialização do sistema, este subsistema coordena a configuração da lógica programável, dos AI Engines e dos restantes componentes da plataforma.
 
-
+**CIPS is also responsible for boot process, device configuration and security resource management. During System initialization, this subsystem coordinates the Programming Logic configuration, AI Engines and the rest of the platform components.   **
 
 \paragraph{Application Processing Unit}
 
