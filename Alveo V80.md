@@ -109,6 +109,14 @@ As LUTs permitem implementar funções lógicas combinatórias arbitrárias, enq
 
 O dispositivo XCV80 presente na Alveo V80 disponibiliza vários milhões de elementos lógicos, oferecendo uma elevada capacidade para desenvolvimento de arquiteturas paralelas especializadas.
 
+\paragraph{DSP Slices}
+
+A Programmable Logic integra blocos dedicados de processamento digital designados DSP Slices. Estes recursos são otimizados para operações aritméticas de elevada velocidade, incluindo multiplicações, acumulações e operações de multiplicação-acumulação (\textit{Multiply-Accumulate} - MAC).
+
+Os DSP Slices desempenham um papel fundamental em aplicações de processamento digital de sinal, uma vez que permitem executar operações matemáticas complexas com menor consumo de recursos lógicos e maior desempenho relativamente a implementações baseadas exclusivamente em LUTs.
+
+Em algoritmos de radar e processamento SAR, estes blocos são frequentemente utilizados para filtragem digital, correlação, interpolação e operações matriciais intensivas.
+
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
 
