@@ -117,6 +117,12 @@ Os DSP Slices desempenham um papel fundamental em aplicações de processamento 
 
 Em algoritmos de radar e processamento SAR, estes blocos são frequentemente utilizados para filtragem digital, correlação, interpolação e operações matriciais intensivas.
 
+\paragraph{Memória On-Chip}
+
+A lógica programável dispõe de múltiplos níveis de memória interna distribuídos pelo dispositivo. Estes incluem Block RAM (BRAM) e UltraRAM (URAM), que permitem armazenar temporariamente dados e coeficientes próximos das unidades de processamento.
+
+A utilização destas memórias reduz a necessidade de acesso frequente à memória externa, diminuindo a latência e aumentando o débito do sistema. Em arquiteturas de processamento em fluxo (\textit{streaming}), estes recursos são frequentemente utilizados para implementar buffers, filas de dados e memórias intermédias entre diferentes etapas de processamento.
+
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
 
