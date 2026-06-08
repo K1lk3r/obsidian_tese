@@ -42,6 +42,9 @@ A Real-Time Processing Unit (RPU) integra dois processadores Arm Cortex-R5F conc
 
 As aplicações típicas incluem controlo industrial, monitorização do sistema, gestão de comunicações e execução de tarefas com requisitos rigorosos de latência.
 
+**The RPU - Real-Time Processing Unit integrates two ARM Cortex-R5F processors designed for critical applications in terms of time. This cores can operate independently or in lockstep mode to raise fault tolerance. 
+The typical applications  include industrial control, system monitoring, communication management and task execution with rigorous latency requisites. **
+
 \paragraph{Interfaces de Comunicação}
 
 O CIPS disponibiliza diversas interfaces de comunicação que permitem a integração da plataforma em sistemas heterogéneos.
