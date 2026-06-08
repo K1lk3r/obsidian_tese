@@ -101,6 +101,14 @@ Na arquitetura Versal, a Programmable Logic funciona em conjunto com o Control, 
 
 Programmable Logic 
 
+\paragraph{Configurable Logic Blocks}
+
+A base da Programmable Logic é constituída por Configurable Logic Blocks (CLBs), compostos por tabelas de consulta (\textit{Look-Up Tables} - LUTs), registos (\textit{Flip-Flops}) e recursos de encaminhamento programáveis.
+
+As LUTs permitem implementar funções lógicas combinatórias arbitrárias, enquanto os registos possibilitam a construção de circuitos sequenciais e pipelines de processamento. A combinação destes elementos permite implementar desde máquinas de estados simples até aceleradores complexos para processamento de sinais e computação científica.
+
+O dispositivo XCV80 presente na Alveo V80 disponibiliza vários milhões de elementos lógicos, oferecendo uma elevada capacidade para desenvolvimento de arquiteturas paralelas especializadas.
+
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
 
