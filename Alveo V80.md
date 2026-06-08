@@ -53,7 +53,7 @@ A interface PCI Express constitui uma das principais formas de comunicação ent
 
 Para aplicações de rede, o dispositivo suporta interfaces Ethernet de elevada velocidade, possibilitando a receção e transmissão direta de fluxos de dados sem necessidade de processamento intermédio pelo processador principal.
 
-Adicionalmente, encontram-se disponíveis interfaces UART, SPI e I\textsuperscript{2}C destinadas à configuração, depuração e comunicação com periféricos externos. Estas interfaces são frequentemente utilizadas durante as fases de desenvolvimento e integração do sistema.
+Adicionalmente, encontram-se disponíveis interfaces UART, SPI e I2C destinadas à configuração, depuração e comunicação com periféricos externos. Estas interfaces são frequentemente utilizadas durante as fases de desenvolvimento e integração do sistema.
 
 \paragraph{Integração com a Network-on-Chip}
 
