@@ -91,6 +91,15 @@ The Processing System corresponds to the componet of conventional processing of 
 Falar só um pouco dos valores de BRAM LUT's DSP's, se bem que não sei bem o que tem de DSP porque existem DSP's engines na placa também.
 
 
+\subsubsection{Programmable Logic (PL)}
+
+A Programmable Logic (PL) corresponde à região de lógica reconfigurável do dispositivo Versal Adaptive SoC. Esta componente herda as principais características das arquiteturas FPGA tradicionais, permitindo a implementação de circuitos digitais personalizados adaptados aos requisitos específicos da aplicação.
+
+Ao contrário dos processadores convencionais, que executam sequencialmente instruções armazenadas em memória, a lógica programável permite criar arquiteturas dedicadas onde múltiplas operações são executadas em paralelo. Esta abordagem possibilita atingir elevados níveis de desempenho e eficiência energética em aplicações de processamento intensivo.
+
+Na arquitetura Versal, a Programmable Logic funciona em conjunto com o Control, Interface and Processing System (CIPS), os AI Engines e a Network-on-Chip (NoC), constituindo um dos principais recursos computacionais disponíveis para aceleração de algoritmos.
+
+Programmable Logic 
 
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
