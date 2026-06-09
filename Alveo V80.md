@@ -127,7 +127,7 @@ A utilização destas memórias reduz a necessidade de acesso frequente à memó
 
 A comunicação entre a Programmable Logic e os restantes componentes do sistema é realizada principalmente através do protocolo AXI (\textit{Advanced eXtensible Interface}), desenvolvido pela Arm.
 
-As interfaces AXI permitem a transferência eficiente de dados entre a lógica programável, os processadores do CIPS, os AI Engines e os controladores de memória ligados à NoC. Dependendo da aplicação, podem ser utilizados canais orientados a memória (\textit{AXI Memory Mapped}) ou canais de transmissão contínua de dados (\textit{AXI Stream}).
+As interfaces AXI permitem a transferência eficiente de dados entre a lógica programável, os processadores do CIPS, os AI Engines e os controladores de memória ligados à NoC. Dependendo da aplicação, podem ser utilizados canais orientados a memória (\textit{AXI Memory Mapped}) ou canais de transmissão contínua de dados (\textit{AXI Memory Mapped})
 
 Esta abordagem simplifica a integração de aceleradores desenvolvidos na lógica programável com os restantes subsistemas da arquitetura Versal.
 
