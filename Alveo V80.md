@@ -139,6 +139,18 @@ Ao contrário dos processadores tradicionais, onde os recursos computacionais s�
 
 Na área do processamento SAR, é comum implementar na lógica programável operações como interpolação, cálculo de distâncias, processamento de amostras complexas e gestão dos fluxos de dados provenientes da memória.
 
+## \paragraph{Relevância para o processamento SAR}
+
+No contexto do algoritmo de Backprojection utilizado em sistemas SAR, a Programmable Logic oferece uma plataforma adequada para implementação de pipelines de processamento em fluxo e operações altamente paralelas. A proximidade aos recursos de memória e a possibilidade de desenvolver arquiteturas dedicadas permitem reduzir significativamente os tempos de execução das etapas mais exigentes do algoritmo. Quando combinada com os AI Engines e a memória HBM da Alveo V80, a lógica programável contribui para a construção de soluções de processamento SAR de elevado desempenho.
+
+## \paragraph{Integração com os AI Engines}
+
+Na arquitetura Versal, a lógica programável não funciona isoladamente. Através da Network-on-Chip e das interfaces dedicadas de comunicação, a Programmable Logic pode cooperar diretamente com os AI Engines.
+
+Esta integração permite distribuir diferentes partes de uma aplicação pelos recursos mais adequados. Operações de controlo e encaminhamento de dados podem ser implementadas na lógica programável, enquanto operações vetoriais intensivas são executadas nos AI Engines. Esta abordagem heterogénea permite explorar simultaneamente o paralelismo espacial da FPGA e o paralelismo vetorial dos AI Engines.
+
+**Ver o que podemos melhorar em relação a arquitecturas existentes, se vale a pena usar os AI Engines + PL para uma arquitectura ainda melhor. E que outras optimizações podemos fazer como usar diferentes representações de números diferentes, se implementar bibliotecas por mim é mais eficiente ... 
+
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
 
@@ -152,5 +164,64 @@ As memorias dos tiles estão conetadas em rede adjacentemente, no entanto també
 Isto é o que permite estes sistemas todos comunicarem entre si, e com o IO. (I think)
 
 
+A Network-on-Chip (NoC) constitui a infraestrutura de comunicação interna da arquitetura Versal Adaptive SoC. Esta rede é responsável pela transferência de dados entre os diversos subsistemas do dispositivo, incluindo o Control, Interface and Processing System (CIPS), a Programmable Logic (PL), os AI Engines e os controladores de memória.
+
+Ao contrário das arquiteturas FPGA tradicionais, onde a comunicação entre blocos depende principalmente dos recursos de encaminhamento da lógica programável, a NoC fornece uma rede dedicada para transporte de dados. Esta abordagem reduz a utilização dos recursos lógicos para comunicação e permite alcançar maiores larguras de banda e previsibilidade temporal.
+
+A NoC funciona como uma espinha dorsal de interligação do sistema, permitindo que os diferentes recursos computacionais operem de forma coordenada e acedam eficientemente aos diversos níveis de memória disponíveis na plataforma.
+## \paragraph{Necessidade de uma infraestrutura dedicada}
+
+Nas arquiteturas FPGA convencionais, a comunicação entre diferentes módulos é realizada através dos recursos de routing da própria FPGA. Embora esta abordagem ofereça elevada flexibilidade, torna-se progressivamente mais complexa à medida que aumenta o número de elementos computacionais e a quantidade de dados transferidos.
+
+O crescimento da capacidade dos dispositivos FPGA, juntamente com a introdução de novos elementos computacionais especializados, como os AI Engines e a memória HBM, criou a necessidade de uma infraestrutura de comunicação capaz de suportar elevadas larguras de banda sem comprometer os recursos da lógica programável.
+
+A Network-on-Chip surge assim como uma solução escalável para interligar os diversos componentes do sistema, permitindo separar as funções de computação das funções de comunicação.
+
+## \paragraph{Arquitetura da rede}
+
+A NoC é constituída por um conjunto distribuído de routers e canais de comunicação de elevada velocidade organizados numa topologia interna que cobre todo o dispositivo. Cada subsistema relevante da arquitetura possui pontos de acesso à rede, permitindo enviar e receber dados através de canais dedicados.
+
+Os dados são transmitidos sob a forma de pacotes, que são encaminhados pelos routers internos até ao destino pretendido. Este mecanismo permite que múltiplas transferências ocorram simultaneamente sem interferência significativa entre si.
+
+A utilização de uma rede dedicada reduz a necessidade de implementar estruturas complexas de interligação na lógica programável, simplificando o desenvolvimento de aplicações de grande escala.
+
+## \paragraph{Acesso aos recursos de memória}
+
+Uma das principais funções da NoC consiste em fornecer acesso eficiente aos diferentes sistemas de memória presentes no dispositivo.
+
+Os controladores de memória encontram-se ligados diretamente à NoC, permitindo que processadores, AI Engines e aceleradores implementados na lógica programável acedam aos dados através de uma infraestrutura comum. Desta forma, a movimentação de dados ocorre independentemente dos recursos de routing da FPGA.
+
+No caso da Alveo V80, esta funcionalidade assume particular relevância devido à presença de memória HBM2e de elevada largura de banda. A NoC permite distribuir eficientemente o tráfego entre os múltiplos canais de memória, reduzindo situações de congestionamento e aumentando o desempenho global do sistema.
+
+## \paragraph{Quality of Service}
+
+A Network-on-Chip implementa mecanismos de Quality of Service (QoS) que permitem atribuir prioridades distintas aos diferentes fluxos de dados.
+
+Esta capacidade é particularmente importante em sistemas heterogéneos onde coexistem aplicações com diferentes requisitos de desempenho. Fluxos de dados críticos podem receber prioridade superior relativamente a transferências menos sensíveis à latência, garantindo maior previsibilidade temporal e utilização mais eficiente dos recursos da rede.
+
+## \paragraph{Integração com a Programmable Logic}
+
+A comunicação entre a Programmable Logic e os restantes componentes do sistema é realizada através de interfaces AXI ligadas diretamente à NoC.
+
+Os aceleradores implementados na lógica programável podem aceder à memória externa, receber dados provenientes do CIPS ou comunicar com os AI Engines sem necessidade de desenvolver infraestruturas dedicadas de comunicação.
+
+Esta abordagem simplifica significativamente o desenvolvimento de arquiteturas complexas e favorece a reutilização de blocos de hardware.
+
+
+## \paragraph{Integração com os AI Engines}
+
+Os AI Engines encontram-se ligados à Network-on-Chip através de interfaces dedicadas que permitem a transferência eficiente de dados entre a matriz de processamento vetorial e os restantes subsistemas da arquitetura.
+
+A NoC desempenha um papel fundamental na alimentação dos AI Engines com os dados necessários à execução dos algoritmos. Os dados podem ser transferidos diretamente a partir da memória HBM ou da lógica programável, permitindo construir pipelines de processamento distribuídos.
+
+Esta integração possibilita explorar simultaneamente o elevado paralelismo dos AI Engines e a elevada largura de banda disponibilizada pelos sistemas de memória da plataforma.
+
+## \paragraph{Integração com a memória HBM}
+
+A memória HBM2e presente na Alveo V80 encontra-se diretamente integrada na infraestrutura da NoC através de múltiplos controladores independentes.
+
+Esta organização permite que diferentes blocos computacionais acedam simultaneamente a bancos de memória distintos, aumentando significativamente a largura de banda efetiva disponível para a aplicação.
+
+A proximidade entre a HBM e a NoC reduz ainda a latência associada à movimentação de grandes volumes de dados, característica particularmente relevante em aplicações de processamento científico, inteligência artificial e processamento radar.
 ## Use cases
 The capabilities of the V80 mean it is ideal for memory-bound compute applications. These applications include genomics, astrophysics, and, of course, networking, such as packet monitoring, cybersecurity, and offloading computational storage, enabling CPU offload.
