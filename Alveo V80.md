@@ -5,7 +5,7 @@ The processing system (PS), platform management controller (PMC), and CCIX PCIe 
 
 Aqui sei que existem 3 modulos principais APU  o processador normal RPU o real time processador e PMC acho que é a programming manager and controller 
 
-
+ 
 ## Control, Interface and Processing System (CIPS)
 
 O Control, Interface and Processing System (CIPS) constitui o subsistema responsável pelo controlo e gestão do dispositivo Versal Adaptive SoC. Este bloco integra processadores de propósito geral, controladores de periféricos, interfaces de comunicação externas e mecanismos de configuração do sistema, funcionando como ponto central de coordenação dos restantes recursos computacionais.
