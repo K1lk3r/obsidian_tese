@@ -24,7 +24,7 @@ O CIPS é também responsável pelo processo de arranque (\textit{boot}), config
 
 **CIPS is also responsible for boot process, device configuration and security resource management. During System initialization, this subsystem coordinates the Programming Logic configuration, AI Engines and the rest of the platform components.   **
 
-\paragraph{Application Processing Unit}
+## \paragraph{Application Processing Unit}
 
 
 
@@ -36,7 +36,7 @@ The Cortex-A72 posses multi-level cache memory and complex software execution su
 
 Os Cortex-A72 possuem memória cache multinível e suporte para execução de software complexo, permitindo que o Versal funcione como um sistema computacional autónomo sem necessidade de um processador externo.
 
-\paragraph{Real-Time Processing Unit}
+## \paragraph{Real-Time Processing Unit}
 
 A Real-Time Processing Unit (RPU) integra dois processadores Arm Cortex-R5F concebidos para aplicações críticas em termos temporais. Estes núcleos podem operar de forma independente ou em modo lockstep para aumentar a tolerância a falhas.
 
@@ -45,7 +45,7 @@ As aplicações típicas incluem controlo industrial, monitorização do sistema
 **The RPU - Real-Time Processing Unit integrates two ARM Cortex-R5F processors designed for critical applications in terms of time. This cores can operate independently or in lockstep mode to raise fault tolerance. 
 The typical applications  include industrial control, system monitoring, communication management and task execution with rigorous latency requisites. **
 
-\paragraph{Interfaces de Comunicação}
+## \paragraph{Interfaces de Comunicação}
 
 O CIPS disponibiliza diversas interfaces de comunicação que permitem a integração da plataforma em sistemas heterogéneos.
 
@@ -55,7 +55,7 @@ Para aplicações de rede, o dispositivo suporta interfaces Ethernet de elevada 
 
 Adicionalmente, encontram-se disponíveis interfaces UART, SPI e I2C destinadas à configuração, depuração e comunicação com periféricos externos. Estas interfaces são frequentemente utilizadas durante as fases de desenvolvimento e integração do sistema.
 
-\paragraph{Integração com a Network-on-Chip}
+## \paragraph{Integração com a Network-on-Chip}
 
 O acesso aos recursos computacionais e de memória do dispositivo é realizado através da Network-on-Chip (NoC). O CIPS comunica com a lógica programável, os AI Engines e os controladores de memória através desta infraestrutura de interligação de elevada largura de banda.
 
@@ -68,7 +68,7 @@ No contexto desta dissertação, o CIPS desempenha principalmente funções de o
 ###### RPU
 ###### PMC
 
-\subsection{AMD Alveo V80 Accelerator Card}
+# \subsection{AMD Alveo V80 Accelerator Card}
 
 A AMD Alveo V80 é uma placa aceleradora para centros de dados baseada no dispositivo AMD Versal HBM XCV80 Adaptive SoC. Foi desenvolvida para aplicações intensivas em memória e computação, incluindo High Performance Computing (HPC), processamento de sinais, análise de dados, redes de comunicação e aplicações de inteligência artificial.
 
@@ -79,7 +79,7 @@ The AMD Alveo V80 is an accelerator for data center based on the AMD device Vers
 The board integrates several types of computational resources in a single heterogeneous device, combinig ARM processors, Reconfigurable Logic (FPGA), an internal communication Network (Network-on-Chip (NoC)), Engines specialized in vectorial computation named AI Engines and High Memory Bandwidth (HBM2e). This architecture allows the hardware to adapt to the application and explore high level of parallelism. The Alveo V80 offers more or less 32 GB of memory HBM2e with a bandwidth that can surpass of 800 GB/s , allowing for memory bound applications.
 
 
-\subsubsection{Processing System}
+## \subsubsection{Processing System}
 
 O Processing System (PS) corresponde à componente de processamento convencional do Versal Adaptive SoC. Esta região integra processadores Arm Cortex-A72 de 64 bits destinados à execução de sistemas operativos e aplicações de controlo, bem como processadores Arm Cortex-R5 para tarefas de tempo real.
 
@@ -87,11 +87,11 @@ O PS é normalmente responsável pela configuração do sistema, gestão da comu
 
 The Processing System corresponds to the componet of conventional processing of the Versal Adaptive SoC. This region integrates ARM Cortex-A72 64 bit processor, destined to operating systems and control application execution. It also has ARM Cortex-R5  processor for Real-Time Processing tasks.
 
-## PL (programming logic)
+# PL (programming logic)
 Falar só um pouco dos valores de BRAM LUT's DSP's, se bem que não sei bem o que tem de DSP porque existem DSP's engines na placa também.
 
 
-\subsubsection{Programmable Logic (PL)}
+## \subsubsection{Programmable Logic (PL)}
 
 A Programmable Logic (PL) corresponde à região de lógica reconfigurável do dispositivo Versal Adaptive SoC. Esta componente herda as principais características das arquiteturas FPGA tradicionais, permitindo a implementação de circuitos digitais personalizados adaptados aos requisitos específicos da aplicação.
 
@@ -101,7 +101,7 @@ Na arquitetura Versal, a Programmable Logic funciona em conjunto com o Control, 
 
 Programmable Logic 
 
-\paragraph{Configurable Logic Blocks}
+## \paragraph{Configurable Logic Blocks}
 
 A base da Programmable Logic é constituída por Configurable Logic Blocks (CLBs), compostos por tabelas de consulta (\textit{Look-Up Tables} - LUTs), registos (\textit{Flip-Flops}) e recursos de encaminhamento programáveis.
 
@@ -109,7 +109,7 @@ As LUTs permitem implementar funções lógicas combinatórias arbitrárias, enq
 
 O dispositivo XCV80 presente na Alveo V80 disponibiliza vários milhões de elementos lógicos, oferecendo uma elevada capacidade para desenvolvimento de arquiteturas paralelas especializadas.
 
-\paragraph{DSP Slices}
+## \paragraph{DSP Slices}
 
 A Programmable Logic integra blocos dedicados de processamento digital designados DSP Slices. Estes recursos são otimizados para operações aritméticas de elevada velocidade, incluindo multiplicações, acumulações e operações de multiplicação-acumulação (\textit{Multiply-Accumulate} - MAC).
 
@@ -117,11 +117,27 @@ Os DSP Slices desempenham um papel fundamental em aplicações de processamento 
 
 Em algoritmos de radar e processamento SAR, estes blocos são frequentemente utilizados para filtragem digital, correlação, interpolação e operações matriciais intensivas.
 
-\paragraph{Memória On-Chip}
+## \paragraph{Memória On-Chip}
 
 A lógica programável dispõe de múltiplos níveis de memória interna distribuídos pelo dispositivo. Estes incluem Block RAM (BRAM) e UltraRAM (URAM), que permitem armazenar temporariamente dados e coeficientes próximos das unidades de processamento.
 
 A utilização destas memórias reduz a necessidade de acesso frequente à memória externa, diminuindo a latência e aumentando o débito do sistema. Em arquiteturas de processamento em fluxo (\textit{streaming}), estes recursos são frequentemente utilizados para implementar buffers, filas de dados e memórias intermédias entre diferentes etapas de processamento.
+
+## \paragraph{Interfaces AXI}
+
+A comunicação entre a Programmable Logic e os restantes componentes do sistema é realizada principalmente através do protocolo AXI (\textit{Advanced eXtensible Interface}), desenvolvido pela Arm.
+
+As interfaces AXI permitem a transferência eficiente de dados entre a lógica programável, os processadores do CIPS, os AI Engines e os controladores de memória ligados à NoC. Dependendo da aplicação, podem ser utilizados canais orientados a memória (\textit{AXI Memory Mapped}) ou canais de transmissão contínua de dados (\textit{AXI Stream}).
+
+Esta abordagem simplifica a integração de aceleradores desenvolvidos na lógica programável com os restantes subsistemas da arquitetura Versal.
+
+## \paragraph{Aceleradores de Hardware}
+
+Uma das principais vantagens da Programmable Logic é a possibilidade de desenvolver aceleradores específicos para uma determinada aplicação. Estes aceleradores podem ser concebidos para executar operações críticas de forma altamente paralela e com latências reduzidas.
+
+Ao contrário dos processadores tradicionais, onde os recursos computacionais são partilhados entre diferentes tarefas, os aceleradores implementados na lógica programável dispõem de recursos dedicados para cada operação. Desta forma, o desempenho pode aumentar significativamente para algoritmos com elevado paralelismo inerente.
+
+Na área do processamento SAR, é comum implementar na lógica programável operações como interpolação, cálculo de distâncias, processamento de amostras complexas e gestão dos fluxos de dados provenientes da memória.
 
 ## AI Engines
 Os AI engines são compostos por uma rede de AI Tiles em que cada Tile tem uma memória própria e estão ligadas com as dos Tiles adjacentes com uma pequena nuance em que a memória estiver à esquerda do Tile esta não está ligada com a Memória à direita (com uma imagem fica mais claro).  
