@@ -1,5 +1,12 @@
 ## Introduction
 ## State of the art
+In this part of the Report I am going to introduce a little bit about what is SAR, the backprojection Algorithm that I'm working with. Also going to talk about the main point of this work the Alveo V80 accelerator Card with the Versal Architecture, that is going to be used to accelerate the BP algorithm, and its architecture, new technologies (AI Engines). Also some implementations of BP in FPGA devices or Versal 
+
+por pontos 
+- SAR
+- BP
+- Implementações BP
+- Alveo V80 Versal Architecture.
 #### Synthetic Aperture Radar
 sar is a type of Radar technology used for two dimensional high resolution image creation or three dimensional recreation of landscapes. Regardless of weather condition or time of the day. Since it follows RADAR principles, emitting and recording echoes of an eletromagnetic wave weather conditions or time of the day do not have an impact in generating images. The synthetic aperture can be obtained through the movement of the Satellite or airship, as we want a higher resolution we cannot have an antenna that would match it, otherwise the antenna would have a big size that would not fit in a Satellite or airship. 
 
