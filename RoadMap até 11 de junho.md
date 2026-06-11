@@ -12,3 +12,4 @@ Colocar as tabelas que estao no paper da AMD
 Perguntar ao chatGPT que otimizaçoes é que posso fazer 
 E que mudar o formato de float point para fixed point
 E perguntar se isso daria algum speed up
+Pedir ao chat GPT para me fazer um roadmap
